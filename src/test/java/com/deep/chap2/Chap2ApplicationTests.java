@@ -2,6 +2,7 @@ package com.deep.chap2;
 
 import com.deep.chap2.config.AppConfig;
 import com.deep.chap2.pojo.User;
+import com.deep.chap2.service.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -21,5 +22,4 @@ private final Logger logger = LoggerFactory.getLogger(Chap2Application.class);
         User user = context.getBean(User.class);
         logger.info("Bean名称:"+user.getUserName());
     }
-
 }
